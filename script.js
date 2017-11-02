@@ -2,28 +2,41 @@
 var myQuestion = [
 {
     question: "What noise that warms you of danger?",
-    answer: "alarm"
+    answer:"alarm"
 },
 
 {
     question: "What does a group of musician called",
-    answer: "band"
+    answer:"band"
 },
 {
     question: "What does a person called who works with wood?",
-    answer: "carpenter"
+    answer:"carpenter"
 },
 {
     question: "What is 12/3",
-    answer: 4
+    answer: "4"
 },
 {
-    question: "What is a circular food from Italy",
-    answer: "pizza"
+    question: "What is a circular food from Italy?",
+    answer:"pizza"
+},
+
+{
+    question: "how do you turn a door knob?",
+    answer:"clockwise"
+},
+{
+    question: "What is the color of the sky",
+    answer:"blue"
+},
+{
+    question: "What is the color of the grass",
+    answer:"green"
 },
 ]
 
-for(var i = 0; i<myQuestion.length; i++){
+for(var i = 0; i <myQuestion.length; i++){
  
     var question = myQuestion[i].question;
     
@@ -34,11 +47,26 @@ for(var i = 0; i<myQuestion.length; i++){
 
 function result(){
 
-for(var i = 0; i< myQuestion.length; i++){
+for(var i = 0; i < myQuestion.length; i++){
 
-    var answer = myQuestion[i].question;
+    var answer = myQuestion[i].answer;
 
-    var guess = document.getElementById("answer", [i]).value;
+    var guess = document.getElementById("answer" + [i]).value;
 
+
+   if(answer == guess){
+       console.log("correct");
+      $("#check" + [i]).html("&#10004;").css("color", "green");
+        ;
+
+   
+   }else if(answer != guess){
+    $("#check" + [i]).text('X').css("color", "red");
+    console.log("test");
+   
+}else{
+
+   }
+    
 }
 }
