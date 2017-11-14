@@ -1,7 +1,7 @@
 //Question
 var myQuestion = [
 {
-    question: "What noise that warms you of danger?",
+    question: "What noise that warns you of danger?",
     answer:"alarm"
 },
 
