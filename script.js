@@ -36,6 +36,19 @@ var myQuestion = [
 },
 ]
 
+module.export = function(){
+
+    for(var i = 0; i < myQuestion.length; i++){
+ 
+       if(myQuestion[0]){
+
+        return alarm
+       }
+
+    }
+
+}
+
 for(var i = 0; i <myQuestion.length; i++){
  
     var question = myQuestion[i].question;
@@ -70,3 +83,4 @@ for(var i = 0; i < myQuestion.length; i++){
     
 }
 }
+ 
